@@ -4,17 +4,15 @@ import { Home } from './components/home/home';
 import {Route, Switch} from 'react-router'
 import { MonthStatistics } from './components/monthStatistics/monthStatistics';
 import { Header } from './components/shared/header/header';
+
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/month-statistics" exact component={MonthStatistics} />
-
-
-      </Switch>
-      
+      </Switch>      
     </div>
   );
 }
