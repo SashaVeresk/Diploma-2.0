@@ -1,0 +1,55 @@
+//@import '../../styles/variables.scss';
+
+.thisDay {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-color: #fff;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.topBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    svg {
+        width: 119px;
+        height: 119px;
+    }
+
+}
+
+.thisDayTemp {
+    font-size: 96px;
+    font-weight: 500;
+    color: rgba(71, 147, 255, 1);
+    font-family: Montserrat;
+
+}
+
+.thisDayName {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    margin-bottom: 31px;
+
+}
+
+.thisTime {
+    font-family: Montserrat;
+    color:rgba(147, 156, 176, 1);
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+
+.thisCity {
+    color: rgba(147, 156, 176, 1);
+    font-family: Montserrat;    
+    font-size: 25px;
+    line-height: 30px;
+
+}

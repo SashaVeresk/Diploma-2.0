@@ -15,7 +15,7 @@ const options = [
 const colorStyles = {
     control : (styles: any) => ({
         ...styles,
-        backgroundColor:"rgba(71, 147, 255, 0,2)",
+        backgroundColor:"rgba(71, 147, 255, 0.2);",
         width:"194px",
         hight:"37px",
         border:"none",
