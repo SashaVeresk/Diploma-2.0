@@ -8,8 +8,10 @@ interface Props {}
 export const Home = (props: Props) => {
     return (
         <div className = 'home'>
+        <div className="homeWrapper">  
             <ThisDay />
             <ThisDayInfo />
+        </div>
         </div>
     )
 }

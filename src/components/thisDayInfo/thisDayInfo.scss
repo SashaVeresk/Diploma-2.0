@@ -30,16 +30,30 @@
     justify-content: center;
     background-color: #fff;
     box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
-
+    margin-right: 20px;
     border-radius: 50%;
 }
 
 .indicatorName {
     font-size: 14px;
-    color:black
+    color: rgba(147, 156, 176, 1);
+    font-family: Montserrat;
+    margin-right: 20px;
 }
 
 .indicatorValue {
     margin-bottom: 14px;
-    color: #fff
+    color: black;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 }
+
+.cloudImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
