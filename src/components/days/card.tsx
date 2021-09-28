@@ -20,6 +20,6 @@ export const Card = ({today}:Props) => {
             </div>    
             <div className="temp_day">{temp_day}</div>
             <div className="temp_night">{temp_night}</div>
-            <div className="day">{info}</div>
-    </div>)
+            <div className="info">{info}</div>
+        </div>)
 }

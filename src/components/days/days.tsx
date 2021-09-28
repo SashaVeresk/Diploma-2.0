@@ -1,6 +1,7 @@
 import React from 'react';
 import './days.scss';
 import {Card} from "./card";
+import { Tabs } from './tabs';
 
 interface Props {}
 
@@ -19,7 +20,7 @@ export const Days = (props:Props) => {
         {
             day: 'Сегодня',
             day_info: '28 авг',
-            icon_id: 'sun',
+            icon_id: 'sunSmall',
             temp_day: '+18',
             temp_night: '+15',
             info: 'Облачно',
@@ -30,7 +31,7 @@ export const Days = (props:Props) => {
             icon_id: 'small_rain_sun',
             temp_day: '+18',
             temp_night: '+15',
-            info: 'небольшой дождь и солнце',
+            info: 'Небольшой дождь и солнце',
           },
           {
             day: 'Ср',
@@ -38,7 +39,7 @@ export const Days = (props:Props) => {
             icon_id: 'small_rain',
             temp_day: '+18',
             temp_night: '+15',
-            info: 'небольшой дождь',
+            info: 'Небольшой дождь',
           },
           {
             day: 'Чт',
@@ -59,7 +60,7 @@ export const Days = (props:Props) => {
           {
             day: 'Сб',
             day_info: '28 авг',
-            icon_id: 'sun',
+            icon_id: 'sunSmall',
             temp_day: '+18',
             temp_night: '+15',
             info: 'Облачно',
@@ -67,14 +68,20 @@ export const Days = (props:Props) => {
           {
             day: 'Вс',
             day_info: '28 авг',
-            icon_id: 'sun',
+            icon_id: 'sunSmall',
             temp_day: '+18',
             temp_night: '+15',
             info: 'Облачно',
           },
     ]
-    return(
+  return(
+    <>
+    <Tabs />
     <div className="days">{
-        days.map((today:Day) => (<Card today={today}/>))
-    }</div>) 
-}
+        days.map((today:Day) => (
+        <Card today={today}/>
+        ))}
+    </div>
+    </>
+  ); 
+};

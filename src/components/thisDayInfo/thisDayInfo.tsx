@@ -34,7 +34,8 @@ export const ThisDayInfo = (props: Props) => {
         value:'3 м/с юго-запад - легкий ветер',
     },
 ]
-    return <div className="thisDayInfo">
+    return (
+    <div className="thisDayInfo">
         <div className="ThisDayInfoItems">
             {items.map((item: Item) => (
                 <ThisDayItem key ={item.iconId} item={item}/>
@@ -42,5 +43,5 @@ export const ThisDayInfo = (props: Props) => {
         </div>
         <img className="cloudImg" src={cloud} alt="cloud"></img>
 
-    </div>
+    </div>)
 }
