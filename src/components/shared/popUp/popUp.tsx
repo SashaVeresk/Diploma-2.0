@@ -1,4 +1,5 @@
 import React from 'react';
+import { GlobalSvgSelector } from '../../../assets/images/icon/globalSvgSelector/globalSvgSelector';
 import { Item } from '../../thisDayInfo/thisDayInfo';
 import { ThisDayItem } from '../../thisDayInfo/thisDayItem';
 import './popUp.scss';
@@ -36,11 +37,23 @@ export const PopUp = ({}: Props) => {
 
     <> 
     <div className="blur"></div>
-    <div className="popUp">     
+    <div className="popUp">
+        <div className="dayAbout">
+            <div className="dayAboutTemp">20°</div>
+            <div className="dayAboutName">Сегодня</div>
+            <div className="img">
+                <GlobalSvgSelector id="sun" />
+            </div>
+            <div className="dayAboutTime">Время: 23.34</div>
+            <div className="dayAboutCity">Грород: Минск</div>
+         </div>     
             <div className="ThisDayInfoItems">
                 {items.map((item: Item) => (
                     <ThisDayItem key ={item.iconId} item={item}/>
                 ))}
+            </div>
+            <div className="close">
+                <GlobalSvgSelector id="close" />
             </div>
         </div>
 
