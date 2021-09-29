@@ -1,4 +1,5 @@
 @import '~normalize.css';
+@import './variables.scss';
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -7,6 +8,7 @@
 body {
     position: relative;
     margin: 0 auto;
+    background: var(--body-background-default);
 }
 
 .container {

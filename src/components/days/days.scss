@@ -29,6 +29,7 @@ transform: 0.3s;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 7px;
+    color:var(--text-color-default);
 }
 
 .dayInfo {
@@ -47,7 +48,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 22px;
-color: rgba(0, 0, 0, 1);
+color:var(--text-color-default);
 margin-bottom: 5px;
 }
 
@@ -86,10 +87,10 @@ line-height: 16px;
     padding: 7px 21px;
     box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
     font-family: Montserrat;
-    color:rgba(0, 0, 0, 1);
+    color:var(--text-color-default);
     font-size: 18px;
     border-radius: 5px;
-    background: #FFFFFF;
+    background: var( --card-background-default);
     cursor: pointer;
     
 }
@@ -99,6 +100,7 @@ line-height: 16px;
 }
 
 .tab{
+    
     &.active {
         background: #4793FF;
         color: #FFFFFF;

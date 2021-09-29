@@ -9,7 +9,7 @@ import { PopUp } from './components/shared/popUp/popUp';
 function App() {
   return (
     <div className="mainWrapper">
-       <PopUp />
+       {/* <PopUp /> */}
       <div className="container">
        
         <Header />

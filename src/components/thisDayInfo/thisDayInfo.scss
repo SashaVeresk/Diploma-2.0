@@ -3,7 +3,7 @@
     padding: 40px;
     max-width: 750px;
     width: 100%;
-    background: #fff;
+    background: var(--components-background-default);
     box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
     border-radius: 20px;
 }
@@ -43,7 +43,7 @@
 
 .indicatorValue {
     margin-bottom: 14px;
-    color: black;
+    color:  var(--text-color-default);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;

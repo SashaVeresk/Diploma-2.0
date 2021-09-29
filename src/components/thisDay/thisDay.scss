@@ -7,6 +7,7 @@
     border-color: #fff;
     box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
     border-radius: 20px;
+    background: var(--components-background-default);
 }
 
 .topBlock {
@@ -32,7 +33,7 @@
 
 .thisDayName {
     font-size: 40px;
-    color: rgba(0, 0, 0, 1);
+    color: var(--text-color-default);
     font-family: Montserrat;
     margin-bottom: 31px;
 
