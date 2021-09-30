@@ -21,30 +21,30 @@ $text-color-light: #fff;
     --body-background-dark: #0d1117;
     --body-background-light: #fff;
 
-    --body-background-default: var(--body-background-dark);
+    --body-background-default: var(--body-background-light);
 
     // components-bg
     --components-background-dark: rgba(79, 79, 79, 1);
     --components-background-light: #fff;
 
-    --components-background-default: var(components-background-dark);
+    --components-background-default: var(--components-background-light);
     
     // card-bg
     --card-background-dark: rgba(46, 48, 53, 1);
     
     --card-background-light: #fff;
 
-    --card-background-default: var(--card-background-dark);
+    --card-background-default: var(--card-background-light);
 
     // card-shadow-bg
     --card-shadow-dark: rgba(79, 79, 79, 1);
     --card-shadow-light: #fff;
 
-    --card-shadow-default: var(card-shadow-dark);
+    --card-shadow-default: var(--card-shadow-light);
 
     // text-bg
-    --text-color-dark: rgba(0, 0, 0, 1);
-    --text-color-light: #fff;
+    --text-color-dark: #fff;
+    --text-color-light: rgba(0, 0, 0, 1);
 
     --text-color-default: var(--text-color-light);
 
