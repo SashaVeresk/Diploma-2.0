@@ -14,10 +14,13 @@ const options = [
     { value: 'grodno', label: 'Гродно' }
   ]
 
+  const [theme, setTheme] = useState('light');
+
+
 const colorStyles = {
     control : (styles: any) => ({
         ...styles,
-        backgroundColor: 0 ? 'rgba(79, 79, 79, 1)' : 'rgba(71, 147, 255, 0.2)',
+        backgroundColor: theme === 'dark' ? 'rgba(79, 79, 79, 1)' : 'rgba(71, 147, 255, 0.2)',
         width:"194px",
         hight:"37px",
         border:"none",
@@ -28,10 +31,9 @@ const colorStyles = {
 
     singleValue : (styles: any) => ({
         ...styles,
-        color: 0 ? '#fff' : '#000',
+        color: theme === 'dark' ? '#fff' : '#000',
     })
 }
-const [theme, setTheme] = useState('light');
 
 function chengeTheme(){
 
