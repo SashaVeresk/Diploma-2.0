@@ -5,7 +5,7 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import './styles/index.scss'
-import {BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from './provider/themeProvider';
 
 
@@ -13,11 +13,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-       
-       <ThemeProvider>
+
+        <ThemeProvider>
           <App />
         </ThemeProvider>
-      </Router> 
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

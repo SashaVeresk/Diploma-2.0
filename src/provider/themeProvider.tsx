@@ -8,11 +8,11 @@ import { storage } from "../model/storage";
 interface Props {
     children: ReactNode;
 }
-export const ThemeProvider = ({children, ...props}: Props) => {
+export const ThemeProvider = ({ children, ...props }: Props) => {
     const [theme, setTheme] = useState<Theme>(storage.getItem('theme' || Theme.LIGHT));
 
     changeCssRootVariables(theme);
-    function changeTheme(theme:Theme){
+    function changeTheme(theme: Theme) {
         storage.setItem('theme', theme)
         setTheme(theme);
 
@@ -24,8 +24,8 @@ export const ThemeProvider = ({children, ...props}: Props) => {
         theme,
         changeTheme
     }}
-    {...props}
+        {...props}
     >
         {children}
-        </ThemeContext.Provider>
+    </ThemeContext.Provider>
 };
